@@ -14,7 +14,6 @@ export const Home = () => {
   const [taskDescription, setTaskDescription] = useState('');
   const [countCreated, setCountCreated] = useState(0);
   const [countFinished, setCountFinished] = useState(0);
-  const [toggleCheckBox, setToggleCheckBox] = useState(false);
 
   function handleTaskAdd(){
     if (tasks.map(item => item.description).includes(taskDescription)) {
